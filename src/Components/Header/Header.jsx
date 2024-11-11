@@ -4,11 +4,15 @@ import './Header.css'
 import Pill from '../Pill/Pill'
 import { Link } from 'react-scroll'
 
-function Header({ name = "Sandeep Ruttala" }) {
+function Header({ name = "John Doe" }) {
   const [menuOpen, setMenuOpen] = useState(false)
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen)
+  }
+
+  const handleLinkClick = () => {
+    setMenuOpen(false)
   }
 
   return (
@@ -22,11 +26,11 @@ function Header({ name = "Sandeep Ruttala" }) {
         <span className="bar"></span>
       </div>
       <div className={`menu ${menuOpen ? 'open' : ''}`}>
-        <Link to="about" spy={true} smooth={true} duration={500}><Pill content="About" /></Link>
-        <Link to="skills" spy={true} smooth={true} duration={500}><Pill content="Skills" /></Link>
-        <Link to="projects" spy={true} smooth={true} duration={500}><Pill content="Projects" /></Link>
-        <Link to="certifications" spy={true} smooth={true} duration={500}><Pill content="Certifications" /></Link>
-        <Link to="contact" spy={true} smooth={true} duration={500}><Pill content="Contact" /></Link>
+        <Link onClick={handleLinkClick} to="about" spy={true} smooth={true} duration={500}><Pill content="About" /></Link>
+        <Link onClick={handleLinkClick} to="skills" spy={true} smooth={true} duration={500}><Pill content="Skills" /></Link>
+        <Link onClick={handleLinkClick} to="projects" spy={true} smooth={true} duration={500}><Pill content="Projects" /></Link>
+        <Link onClick={handleLinkClick} to="certifications" spy={true} smooth={true} duration={500}><Pill content="Certifications" /></Link>
+        <Link onClick={handleLinkClick} to="contact" spy={true} smooth={true} duration={500}><Pill content="Contact" /></Link>
       </div>
     </div>
   )
