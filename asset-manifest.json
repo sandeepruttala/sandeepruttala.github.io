@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.ba2394e8.css",
-    "main.js": "/static/js/main.d7e93cdc.js",
+    "main.js": "/static/js/main.cb7844c2.js",
     "static/media/profile.png": "/static/media/profile.e08a390c2c24d438f2e6.png",
     "static/media/easybill.png": "/static/media/easybill.f9705823d4283447d29b.png",
     "static/media/recipe.png": "/static/media/recipe.7b986d0289d7fc13cb48.png",
     "index.html": "/index.html",
     "main.ba2394e8.css.map": "/static/css/main.ba2394e8.css.map",
-    "main.d7e93cdc.js.map": "/static/js/main.d7e93cdc.js.map"
+    "main.cb7844c2.js.map": "/static/js/main.cb7844c2.js.map"
   },
   "entrypoints": [
     "static/css/main.ba2394e8.css",
-    "static/js/main.d7e93cdc.js"
+    "static/js/main.cb7844c2.js"
   ]
 }
