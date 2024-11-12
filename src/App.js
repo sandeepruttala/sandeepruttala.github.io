@@ -1,3 +1,4 @@
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
@@ -41,6 +42,7 @@ function App() {
       <Certifications />
       <Contact />
       <Footer />
+      <SpeedInsights />
     </div>
   );
 }
